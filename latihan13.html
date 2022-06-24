@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cek Lapar</title>
+</head>
+<body>
+    <input type="text" id="lapar"/>
+    <button onclick="cekLapar()">Cek Lapar</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cekLapar() {
+            let kondisi = document.getElementById("lapar").value;
+            if(kondisi==="lapar") {
+                hasil = "Waktu Makan";
+            } else {
+                hasil = "Bukan Waktu Makan"
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>

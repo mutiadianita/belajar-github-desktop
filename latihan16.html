@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loop Array</title>
+</head>
+<body>
+    <button onclick="print()">Print makanan kesukaan</button>
+    <ol id="hasil"></ol>
+
+    <script>
+        function print() {
+            const dt = document.getElementById("hasil");
+            const list_makanan = ["sate ayam", "sate padang", "ayam goreng", "nasi goreng"];
+            for (let index=0; index<list_makanan.length; index++) {
+                dt.innerHTML = `${dt.innerHTML} <li>${list_makanan[index]}</li>`
+            }
+        }
+    </script>
+</body>
+</html>

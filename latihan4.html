@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipe data Array</title>
+</head>
+<body>
+    <div id="hasil"></div>
+
+    <script>
+        // Tipe data array, ciri-cirinya: menggunakan kurung siku []
+        const transportasi = ["mobil", "motor", "pesawat", "kapal", ["becak", "sepeda"]];
+        document.getElementById("hasil").innerHTML = transportasi[4][1] + " " + transportasi[1];
+    </script>
+</body>
+</html>
